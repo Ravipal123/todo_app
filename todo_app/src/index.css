@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  width: 550px;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Task List Container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search Input */
+.task-list input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.task-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.task-form button:hover {
+  background: #0056b3;
+}
+
+/* Task Item */
+.task-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.task-item.done {
+  background: #e9ecef;
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+.task-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Summary */
+.task-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-summary h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.task-summary button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.task-summary button:hover {
+  background: #218838;
+}
+
+.task-summary button.edit {
+  background: #007bff;
+}
+
+.task-summary button.edit:hover {
+  background: #0056b3;
+}
+
+.task-summary button.delete {
+  background: #dc3545;
+}
+
+.task-summary button.delete:hover {
+  background: #c82333;
+}
+
+/* Task Details */
+.task-details {
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
